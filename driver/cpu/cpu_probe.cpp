@@ -134,16 +134,20 @@ int get_cpu_model_arch(int id, struct cpu_cluster * cluster)
 		case 0xd08:
 			cluster->cpu_model=CPU_A72;
 			cluster->l2_size=1024<<10;
+			cluster->cpu_arch=ARCH_ARM_V8;
 			break;
 		case 0xd03:
 			cluster->cpu_model=CPU_A53;
+			cluster->cpu_arch=ARCH_ARM_V8;
 			break;
 		case 0xc0d:
                 case 0xc0e:
 			cluster->cpu_model=CPU_A17;
+			cluster->cpu_arch=ARCH_ARM_V7
 			break;
 		case 0xc07:
 			cluster->cpu_model=CPU_A7;
+			cluster->cpu_arch=ARCH_ARM_V7
 			break;
 	}
 
