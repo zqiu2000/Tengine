@@ -143,11 +143,11 @@ int get_cpu_model_arch(int id, struct cpu_cluster * cluster)
 		case 0xc0d:
                 case 0xc0e:
 			cluster->cpu_model=CPU_A17;
-			cluster->cpu_arch=ARCH_ARM_V7
+			cluster->cpu_arch=ARCH_ARM_V7;
 			break;
 		case 0xc07:
 			cluster->cpu_model=CPU_A7;
-			cluster->cpu_arch=ARCH_ARM_V7
+			cluster->cpu_arch=ARCH_ARM_V7;
 			break;
 	}
 
